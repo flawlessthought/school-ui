@@ -1,0 +1,133 @@
+<ion-header style="opacity: 0.9; display: flex; border-bottom: none;">
+  <ion-toolbar>
+    <ion-title>
+      Home
+    </ion-title>
+    <ion-nav class="logo">
+      <ion-img src="/assets/logo.png"></ion-img>
+    </ion-nav>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <h1 style="padding-left: 20px;">
+    Hello
+  <br>Seb McKinlay
+  </h1>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button shape="round" size="small" style="padding-left: 20px;" (click)="toggleActive('skills')" [class.active]="activeButton === 'skills'">My Skills</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button shape="round" size="small" style="padding-left: 10px;" (click)="toggleActive('community')" [class.active]="activeButton === 'community'">Community</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-card>
+      <div class="avatar">
+        <ion-avatar>
+          <img alt="Silhouette of a person's head" src="/assets/download.jfif" />
+        </ion-avatar>
+      </div>
+      <ion-card-header>
+          <ion-row>
+              Advanced Python
+          </ion-row>
+      </ion-card-header>
+      
+      <ion-card-content>
+        <ion-card-subtitle>Here you can see your daily task</ion-card-subtitle>
+        <div style="margin-bottom: 8px;">
+          76%
+        </div>
+        <ion-progress-bar value="0.76"></ion-progress-bar>
+      </ion-card-content>
+    </ion-card>
+    
+    <div style="margin-left: 10px; ">
+      <h1>
+        Moringa World
+      </h1>
+    </div>
+
+
+    <ion-row>
+      <ion-card class="card">
+            <div class="avatar">
+              <ion-avatar>
+                <img src="/assets/download.jfif" alt="">
+              </ion-avatar>
+            </div>
+            <div class="icon">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+        <ion-row>
+          <div class="content">
+            5 New <br>
+            Connect
+          </div>
+          <div class="progress-container">
+            <ion-progress-bar value="0.76"></ion-progress-bar>
+          </div>
+        </ion-row>
+      </ion-card>
+      <ion-card class="card">
+        <div class="avatar">
+          <ion-avatar>
+            <img src="/assets/download.jfif" alt="">
+          </ion-avatar>
+        </div>
+        <div class="icon">
+          <ion-icon name="book-outline" style="size: 10px;"></ion-icon>
+        </div>
+    <ion-row>
+      <div class="content">
+        5 New <br>
+        Career
+      </div>
+      <div class="progress-container">
+        <ion-progress-bar value="0.76"></ion-progress-bar>
+      </div>
+    </ion-row>
+  </ion-card>
+  <ion-card class="card">
+            <div class="avatar">
+              <ion-avatar>
+                <img src="/assets/download.jfif" alt="">
+              </ion-avatar>
+            </div>
+            <div class="icon">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+        <ion-row>
+          <div class="content">
+            5 New <br>
+            Entrepreneur
+          </div>
+          <div class="progress-container">
+            <ion-progress-bar value="0.76"></ion-progress-bar>
+          </div>
+        </ion-row>
+      </ion-card>
+      <ion-card class="card">
+        <div class="avatar">
+          <ion-avatar>
+            <img src="/assets/download.jfif" alt="">
+          </ion-avatar>
+        </div>
+        <div class="icon">
+          <ion-icon name="book-outline"></ion-icon>
+        </div>
+    <ion-row>
+      <div class="content">
+        5 New <br>
+        News
+      </div>
+      <div class="progress-container">
+        <ion-progress-bar value="0.76"></ion-progress-bar>
+      </div>
+    </ion-row>
+  </ion-card>
+    </ion-row>
+</ion-content>
